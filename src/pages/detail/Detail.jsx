@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useFetch } from "../../hooks/UseFetch";
+import { useFetch } from "../../hooks/useFetch";
 import { FaStar } from "react-icons/fa";
 import Loading from "../../components/loading/Loading";
 

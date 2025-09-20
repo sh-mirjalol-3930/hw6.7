@@ -1,6 +1,6 @@
 import React from "react";
 import Products from "../../components/products/Products";
-import { useFetch } from "../../hooks/UseFetch";
+import { useFetch } from "../../hooks/useFetch";
 import Banner from "../../components/banner/Banner";
 import Loading from "../../components/loading/Loading";
 
