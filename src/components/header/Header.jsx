@@ -1,13 +1,17 @@
 import React from 'react'
 import { CiLocationOn } from "react-icons/ci";
 import { MdLanguage } from "react-icons/md";
-import { IoIosApps } from "react-icons/io";
+import { IoIosApps, IoIosShirt } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { LuShoppingBag } from "react-icons/lu";
 import logo from "./logo.png"
 import { Link } from 'react-router-dom';
+import { BiSolidCalendarStar } from 'react-icons/bi';
+import { RiBearSmileFill } from 'react-icons/ri';
+import { IoPhonePortrait } from 'react-icons/io5';
+import { GiGuitarHead } from 'react-icons/gi';
 
 
 const Header = () => {
@@ -44,6 +48,16 @@ const Header = () => {
             <button className='flex py-[10px] gap-[15px] px-[20px] rounded-[5px] hover:bg-[#d7d7d9] items-center'><IoIosHeartEmpty className='text-[20px]'/> Saralangan</button>
             <button className='flex py-[10px] gap-[15px] px-[20px] rounded-[5px] hover:bg-[#d7d7d9] items-center'><LuShoppingBag className='text-[20px]'/> Savat</button>
             </div>
+        </div>
+    </div>
+    <div className="container">
+        <div className="flex pb-[20px] gap-[20px] items-center">
+            <p className='flex items-center gap-[5px]'><BiSolidCalendarStar />hafta tovarlari</p>
+            <p className='flex items-center gap-[5px]'><RiBearSmileFill />onalar va bolalar uchun</p>
+            <p className='flex items-center gap-[5px]'><IoIosShirt />yangi kolleksiya</p>
+            <p className='flex items-center gap-[5px]'><GiGuitarHead />xobbi va ijod</p>
+            <p className='flex items-center gap-[5px]'><IoPhonePortrait />smartfonlari</p>
+            <Link to={"/pg"}>electronika</Link>
         </div>
     </div>
     </>

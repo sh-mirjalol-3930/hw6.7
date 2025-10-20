@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from './pages/layout/Layout'
 import Home from './pages/home/Home'
 import Detail from './pages/detail/Detail'
+import Pg from './pages/pg/Pg'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route path='/' element={<Layout/>}>
           <Route index={true} element={<Home/>}/>
           <Route path='/products/:id' element={<Detail/>}/>
+          <Route path='/pg' element={<Pg/>}/>
           <Route path='*' element={<h1>something went wrong :(</h1>}/>
         </Route>
       </Routes>

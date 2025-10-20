@@ -7,12 +7,12 @@ const Products = ({ data }) => {
   const navigate = useNavigate()
 
   return (
-    <div className="flex gap-[12px] mt-[50px] flex-wrap">
+    <div className="flex gap-[12px] justify-between mt-[50px] flex-wrap">
       {data?.products?.map((product) => (
-        <div key={product.id} className="w-[240px] hover:shadow-[0_0_30px_#0003] rounded-[10px] p-[15px]">
+        <div key={product.id} className="w-[240px] hover:shadow-[0_0_30px_#0003] rounded-[10px] p-[10px]">
           <img
             onClick={() => navigate(`/products/${product.id}`)}
-            src={product.thumbnail} // asosiy rasm uchun
+            src={product.thumbnail} 
             alt={product.title}
           />
           <strong className='text-[#7f4dff] flex items-center gap-[10px]'>{product.price} <RiPriceTagFill /></strong>

@@ -18,7 +18,7 @@ const Banner = () => {
       pagination={{ clickable: true }}
       navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
-      className="w-full max-w-[1200px] h-[400px] rounded-[50px] overflow-hidden"
+      className="w-full max-w-[1280px] h-[400px] rounded-[50px] overflow-hidden"
     >
       <SwiperSlide>
         <img
